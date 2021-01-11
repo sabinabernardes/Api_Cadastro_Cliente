@@ -27,6 +27,8 @@
 3.	Spring Web (Spring padrão MVC)
 4.	H2 Database (Banco de dados em memória)
 
+![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/Starter1.PNG)
+
 
 ### As dependências foram adicionadas no arquivo pom.xml conforme mostradas abaixo 
 
@@ -78,9 +80,12 @@
  
 #### Neste projeto usaremos a estrutura MVC ( Model, View, Controller)
 
+
 ## Classe Cliente Model
 
 #### Classe reponsavel pela parte dos dados do projeto 
+
+![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/Cliente.PNG)
 
 ### Para o cadastro de clientes usaremos  as seguintes variaveis  
 
@@ -234,6 +239,8 @@ public class Cliente {
 
 ##### Responsável por gerenciar as requisições 
 
+![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/ClienteController.PNG)
+
 #### Anotações utilizadas nesta classe 
 
 ##### @RestController (retorna o objeto e os dados do objeto para gravar  diretamente na resposta HTTP como JSON ou XML.)
@@ -286,6 +293,8 @@ public class ClienteController {
 ```
 
 ## Classe Cliente Repository
+
+![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/ClienteRepository.PNG)
 
 ##### Responsável por isolar os objetos ou entidades do domínio do código que acessa o banco de dados
 ##### Criar  em forma de interface
