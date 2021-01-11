@@ -23,7 +23,7 @@
 #### Adicionar as seguintes dependências. Uma das vantagens de utilizar o Spring Boot é diminuir o tempo de configuração, pois baixando as dependencias ele configura automaticamente, ou seja uma maneira rápida para desenvolver para web
 
 1.	Spring Boot DevTools (Ajuda na configuração automática)
-2.	Spring Data Jpa (Java persistence API)
+2.	Spring Data Jpa (Java persistence API, facilita para trabalhar com db fazendo as interações )
 3.	Spring Web (Spring padrão MVC)
 4.	H2 Database (Banco de dados em memória)
 
@@ -322,22 +322,26 @@ public interface ClienteRepository  extends JpaRepository<Cliente,Integer>{
 
 ##### Utilizando o Postman podemos fazer o teste de cadastro do primeiro cliente no Json.
 A partir da porta 8080 e o path /clientes 
-Conforme mostrado abaixo após o cadastro a resposta do sistema foi 201 indicando que o cadastro foi realizado .
+Conforme mostrado abaixo após o cadastro a resposta do sistema foi 201 indicando que o cadastro foi carregado pela primeira vez com sucesso  .
 
 ![](https://github.com/sabinabernardes/cadastro_cliente/blob/main/postman_put.PNG)
 
 ### Comando Get
 
 ##### Com o comando Get podemos receber os dados do Json com as informações do cliente
+##### Podemos observar o comando do sistema 200 dizendo que a requisição foi ok 
 
 ![](https://github.com/sabinabernardes/cadastro_cliente/blob/main/postman_get.PNG)
 
 
 
+##Conclusão 
 
+###A experiência e o desafio de montar uma REST API  pela primeira vez foi de muito aprendizado não somente no campo da programação como tambem no campo das softs Skils. Para encontrar a melhor maneira de explicar como montar uma API. Gerando conhecimentos mais profundo do que só seguir um tutorial .
 
-
-https://www.linkedin.com/in/sabina-r-023867b0/
+##### Sabina Bernardes 
+##### bernardes.sabina@gmail.com
+##### https://www.linkedin.com/in/sabina-r-023867b0/
 
 
 
