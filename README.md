@@ -12,15 +12,15 @@
 
 #### File>New>Spring Starter Project
 #### Preencher os campos abaixo
-1.Name
-2.Group
-3.Artifact
-4.Package
+1.Name (Nome do projeto)
+2.Group (identificação do projeto)
+3.Artifact (identificação do jar )
+4.Package  (pacote basico gerado no projeto )
 
 ![iniciando o projeto](https://github.com/sabinabernardes/cadastro_cliente/blob/main/Spring%20starter.PNG)
 
 
-#### Adicionar as seguintes dependências 
+#### Adicionar as seguintes dependências. Uma das vantagens de utilizar o Spring Boot é diminuir o tempo de configuração, pois baixando as dependencias ele configura automaticamente, ou seja uma maneira rápida para desenvolver para web
 
 1.	Spring Boot DevTools (Ajuda na configuração automática)
 2.	Spring Data Jpa (Java persistence API)
@@ -30,7 +30,7 @@
 ![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/Starter1.PNG)
 
 
-### As dependências foram adicionadas no arquivo pom.xml conforme mostradas abaixo 
+### As dependências foram adicionadas no arquivo pom.xml. Conforme mostradas abaixo. O Arquivo pom é um arquivo do Maven que contem as bibliotecas e dependências que facilitarao na congfiguração do projeto . 
 
 ```
 <dependencies>
@@ -237,7 +237,7 @@ public class Cliente {
 
 ## Classe Controller
 
-##### Responsável por gerenciar as requisições 
+##### Responsável por gerenciar as requisições. No caso da requisição para o cadastro do novo cliente e da requisição.
 
 ![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/ClienteController.PNG)
 
@@ -292,12 +292,12 @@ public class ClienteController {
 	}
 ```
 
-## Classe Cliente Repository
+## Interface Cliente Repository
 
 ![](https://github.com/sabinabernardes/Api_Cadastro_Cliente/blob/main/ClienteRepository.PNG)
 
 ##### Responsável por isolar os objetos ou entidades do domínio do código que acessa o banco de dados
-##### Criar  em forma de interface
+
 
 
 ```
@@ -315,6 +315,8 @@ public interface ClienteRepository  extends JpaRepository<Cliente,Integer>{
 }
 ```
 ## Teste de cadastro utilizando o Postman 
+
+### Postman: Ferramenta utilizada para testar as requisições web 
 
 ### Comando Put
 
